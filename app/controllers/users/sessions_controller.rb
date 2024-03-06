@@ -4,6 +4,10 @@ class Users::SessionsController < Devise::SessionsController
   respond_to :json
   # before_action :configure_sign_in_params, only: [:create]
 
+  def auth_options
+    super.merge({store: false})
+  end
+
   # GET /resource/sign_in
   # def new
   #   super
