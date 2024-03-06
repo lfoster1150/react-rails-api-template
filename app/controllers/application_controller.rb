@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::API
-  before_action :authenticate_user!, except: %i[test]
+  before_action :authenticate_user!
 
   def test
     render json: { message: 'Success' }, status: :ok

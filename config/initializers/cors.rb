@@ -8,13 +8,11 @@
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
     origins Rails.application.credentials.site_url
-
     resource "*",
-      # headers: :any,
-      headers: [:Authorization],
-      methods: [:get, :post, :put, :patch, :delete, :options, :head],
-      expose: [:Authorization]
-      # credentials: true,
-      # max_age: 86400
+    headers: :any,
+    methods: [:get, :post, :put, :patch, :delete, :destroy, :options, :head],
+    expose: [:Authorization]
+    # credentials: true,
+    # max_age: 86400
   end
 end
