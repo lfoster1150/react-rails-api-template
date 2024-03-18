@@ -3,7 +3,7 @@
 This is a Rails API only template with a PostgreSQL database.
 \
 \
-It is meant to be used with a React front-end. A template for that can be found [here]().
+It is meant to be used with a React front-end. A template for that can be found [here](https://github.com/lfoster1150/react-rails-template).
 
 <br />
 
