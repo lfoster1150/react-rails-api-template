@@ -5,12 +5,12 @@ default: &default
 
 development:
   <<: *default
-  database: photo_api_development
+  database: template_api_development
 
 test:
   <<: *default
-  database: photo_api_test
+  database: template_api_test
 
 production:
   <<: *default
-  database: photo_api_production
+  database: template_api_production
