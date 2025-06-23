@@ -16,22 +16,6 @@ To get started, in the project directory run the following commands:
 ```
 bundle install
 ```
-
-### Update database.yml
-
-Update the database line in `database.yml` to chanfe the name of your databases. Can be done for development, test, and production. Example:
-
-```yml
-development:
-  <<: *default
-  database: template_api_development
-```
-
-### Create Database
-```
-rails db:create
-```
-
 ### Add Credentials
 This project uses credentials to access environment variables. To update credentials use the following command (`code` can be replaced with desired editor):
 ```
@@ -50,6 +34,21 @@ sendgrid_api_key: # Used for devise password reset emails
 mailer_email: # Your email to send from
 ```
 In order to get `sendgrid_api_key` sign up for Sendgrid  [here](https://sendgrid.com/en-us). Config can be updated in `development.rb` under `smtp_settings`
+
+### Update database.yml
+
+Update the database line in `database.yml` to chanfe the name of your databases. Can be done for development, test, and production. Example:
+
+```yml
+development:
+  <<: *default
+  database: template_api_development
+```
+
+### Create Database
+```
+rails db:create
+```
 
 ### Migrate Database
 ```
